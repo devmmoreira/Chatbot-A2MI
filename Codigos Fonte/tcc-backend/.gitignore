@@ -1,0 +1,7 @@
+node_modules
+
+src/Config/WatsonConfig.ts
+src/Config/EmailSenderconfig.ts
+
+tmp/*
+!tmp/.gitkeep

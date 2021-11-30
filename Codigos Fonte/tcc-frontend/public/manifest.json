@@ -1,0 +1,9 @@
+{
+  "short_name": "A²mi-tcc-ceunsp",
+  "name": "This is a webvsite about ours tcc",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

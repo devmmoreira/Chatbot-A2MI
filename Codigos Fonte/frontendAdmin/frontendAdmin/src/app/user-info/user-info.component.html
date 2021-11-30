@@ -1,0 +1,31 @@
+<form #form="ngForm" (ngSubmit)="updateInfo(form)" class="edit-user">
+    <div class="form-field">
+        <label>Nome</label>
+        <p>{{ userInfo.fullname }}</p>
+    </div>
+    <div class="form-field">
+        <label>Email</label>
+        <p>{{ userInfo.email }}</p>
+    </div>
+    <div class="form-field">
+        <label>Telefone</label>
+        <p>{{ userInfo.phone }}</p>
+    </div>
+    <p class="plans">Planos</p>
+    <table class="user-plans">
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>
+                    <input 
+                        type="checkbox" 
+                        [value]="product.id" 
+                        [checked]="product.isAsigned"
+                        (change)="toggleSelectProduct(product.id)"
+                    />
+                </td>
+                <td>{{ product.name }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="submit">Salvar</button>
+</form>

@@ -1,0 +1,31 @@
+[
+  {
+    "type": "tipo do banco",
+    "host": "localhost",
+    "port": "porta_do_banco",
+    "username": "usuário_do_banco",
+    "password": "senha_do_banco",
+    "database": "A2mi",
+    "entities": ["./src/Models/*.ts"],
+    "migrations": ["./src/Database/Migrations/*.ts"],
+    "cli": {
+      "migrationsDir": "./src/Database/Migrations",
+      "entitiesDir": "./src/Models/"
+    }
+  },
+  {
+    "name": "seeds",
+    "type": "tipo do banco",
+    "host": "localhost",
+    "port": "porta_do_banco",
+    "username": "usuário_do_banco",
+    "password": "senha_do_banco",
+    "database": "A2mi",
+    "entities": ["./src/Models/*.ts"],
+    "migrations": ["./src/Database/Seeds/*.ts"],
+    "cli": {
+      "migrationsDir": "./src/Database/Seeds",
+      "entitiesDir": "./src/Models/"
+    }
+  }
+]

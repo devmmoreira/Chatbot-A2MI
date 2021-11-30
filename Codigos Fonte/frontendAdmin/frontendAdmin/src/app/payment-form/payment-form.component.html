@@ -1,0 +1,21 @@
+<form class="add-payment" [formGroup]="formulario">
+    <div class="form-field">
+        <label for="">Titulo</label>
+        <input type="text" formControlName="title">
+    </div>
+    <div class="form-field">
+        <label for="">Valor</label>
+        <input type="number" formControlName="value">
+    </div>
+    <div class="form-field">
+        <label for="">Tipo</label>
+        <input type="text" formControlName="type">
+    </div>
+    <div class="form-field">
+        <label for="">Data de Vencimento</label>
+        <input type="date" formControlName="dueDate">
+    </div>
+    <button type="submit" (click)="createPayment()">Enviar</button>
+    <br>
+    <button type="button" (click)="cancelAdd()">Cancelar</button>
+</form>

@@ -1,0 +1,14 @@
+<div class="container">
+    <mat-card>
+        <form [formGroup]="formulario">
+            <label>login</label>
+            <input type="text" formControlName="login">
+            <label>senha</label>
+            <input type="password" formControlName="senha">
+            <br>
+            <button (click)="onSubmit()">enviar</button>
+            <br>
+            <button>cancelar</button>
+        </form>
+    </mat-card>
+</div>

@@ -1,0 +1,17 @@
+<div class="home-page">
+    <header>
+        <div>
+            <img src="assets/logotipo-branco.png" alt="logo-a2mi"/>
+            <button (click)="logOut()">Sair</button>
+        </div>
+    </header>
+    <div class="page-content">
+        <nav>
+            <button (click)="redirectRoute('/home/cliente')">Clientes</button>
+            <button (click)="redirectRoute('/home/pagamento')">Pagamentos</button>
+        </nav>
+        <section>
+            <router-outlet></router-outlet>
+        </section>
+    </div>
+</div>
